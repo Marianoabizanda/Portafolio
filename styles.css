@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-image {
+  width: 150px; /* Ajusta el ancho según sea necesario */
+  height: auto; /* Altura automática para mantener la proporción */
+  border-radius: 50%; /* Borde redondeado para la imagen circular */
+  margin-bottom: 1rem; /* Espacio hacia abajo para separación */
+  display: block; /* Para centrar la imagen */
+  margin: 0 auto; /* Para centrar horizontalmente */
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background: #444;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+}
+
+h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+.project {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Estilos generales para el contenedor del about */
+#about {
+  text-align: center; /* Centrar el contenido del about */
+}
+
+/* Estilos para la lista de habilidades */
+.skills-list {
+  list-style-type: none; /* Elimina los puntos de la lista */
+  padding: 0;
+  display: flex; /* Utiliza flexbox para alinear las imágenes en fila */
+  justify-content: center; /* Centra los elementos en el contenedor */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas si es necesario */
+}
+
+/* Estilos para los ítems de la lista */
+.skills-list li {
+  margin: 10px; /* Espacio alrededor de cada logo */
+}
+
+/* Estilos específicos para las imágenes */
+.skills-list img {
+  width: 100px; /* Ajusta el tamaño de las imágenes */
+  height: auto; /* Mantén la proporción de las imágenes */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el movimiento y sombra */
+}
+
+/* Animación de flotar */
+.skills-list img:hover {
+  transform: translateY(-10px); /* Mueve las imágenes hacia arriba al pasar el ratón por encima */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Añade una sombra para dar efecto de elevación */
+}
+
+
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 100;
+  margin-top: 1rem;
+}
+
+footer ul {
+  list-style-type: none; /* Elimina los puntos de la lista */
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block; /* Mostrar los ítems en línea */
+  margin-right: 10px; /* Espacio entre cada ítem */
+}
+
+/* Estilos específicos para las imágenes */
+footer ul li img {
+  width: 40px; /* Ancho de las imágenes */
+  height: auto; /* Altura automática para mantener la proporción */
+  border-radius: 100%; /* Borde redondeado (opcional) */
+}
+
+/* Estilos para el formulario de contacto */
+#contactForm {
+  max-width: 600px;
+  margin: 2rem auto 4rem; 
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+  z-index: 99;
+}
+
+#contactForm label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contactForm textarea {
+  resize: vertical;
+}
+
+#contactForm button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+  background-color: #555;
+}
