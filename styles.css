@@ -1,486 +1,493 @@
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  * {
+  box-sizing: border-box; 
   margin: 0;
   padding: 0;
-} 
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  } 
 
 
 
 
-header {
-  position: relative;
-  display: flex;
-  flex-direction: column; /* Coloca los elementos en una columna */
-  align-items: center; /* Centra los elementos horizontalmente */
-  justify-content: center; /* Centra los elementos verticalmente */
-  height: 100vh; /* Ocupa el 100% del alto de la ventana del navegador */
-  text-align: center; /* Centra el texto horizontalmente */
-  background-image: linear-gradient(135deg,#00B7D4,#505488,#2F3F80,#161569,#5A4894,#A950A1,#FF7CAE);
-  background-size: 500%;
-  animation: fanimado 20s infinite;
-  padding: 2rem;
-  text-align: center;
-  font-family: 'Poppins', sans-serif; 
-  z-index: 1; 
-}
-
-header h1 {
-  font-size: 1.7em; /* Tamaño de fuente del título */
-  color: #fffefec7; /* Color del texto */
-  margin: 0; /* Elimina el margen */
-}
-
-
-
-header p {
-  font-size: 2.8em; /* Tamaño de fuente del párrafo */
-  color: #000000d0; /* Color del texto */
-  margin-top: 5px; /* Espacio arriba del párrafo */
-}
-
-header p.descripcion {
-  font-size: 1.6em;
-  color: #000000d0;
-}
-
-/* Media queries para dispositivos más pequeños */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 1.2em; /* Tamaño de fuente más pequeño en dispositivos más pequeños */
+  header {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    height: 100vh; /* Ocupa el 100% del alto de la ventana del navegador */
+    text-align: center; /* Centra el texto horizontalmente */
+    background-image: linear-gradient(135deg,#00B7D4,#505488,#2F3F80,#161569,#5A4894,#A950A1,#FF7CAE);
+    background-size: 500%;
+    animation: fanimado 20s infinite;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; 
+    z-index: 1; 
   }
 
+  header h1 {
+    font-size: 1.7em; /* Tamaño de fuente del título */
+    color: #fffefec7; /* Color del texto */
+    margin: 0; /* Elimina el margen */
+  }
+
+
+
   header p {
-    font-size: 2em; /* Tamaño de fuente más pequeño en dispositivos más pequeños */
+    font-size: 2.8em; /* Tamaño de fuente del párrafo */
+    color: #000000d0; /* Color del texto */
+    margin-top: 5px; /* Espacio arriba del párrafo */
   }
 
   header p.descripcion {
-    font-size: 1.2em; /* Tamaño de fuente más pequeño en dispositivos más pequeños */
-  }
-}
-
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 1em; /* Tamaño de fuente más pequeño en dispositivos muy pequeños */
+    font-size: 1.6em;
+    color: #000000d0;
   }
 
-  header p {
-    font-size: 1.5em; /* Tamaño de fuente más pequeño en dispositivos muy pequeños */
+  /* Media queries para dispositivos más pequeños */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 1.2em; /* Tamaño de fuente más pequeño en dispositivos más pequeños */
+    }
+
+    header p {
+      font-size: 2em; /* Tamaño de fuente más pequeño en dispositivos más pequeños */
+    }
+
+    header p.descripcion {
+      font-size: 1.2em; /* Tamaño de fuente más pequeño en dispositivos más pequeños */
+    }
   }
 
-  header p.descripcion {
-    font-size: 1em; /* Tamaño de fuente más pequeño en dispositivos muy pequeños */
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1em; /* Tamaño de fuente más pequeño en dispositivos muy pequeños */
+    }
+
+    header p {
+      font-size: 1.5em; /* Tamaño de fuente más pequeño en dispositivos muy pequeños */
+    }
+
+    header p.descripcion {
+      font-size: 1em; /* Tamaño de fuente más pequeño en dispositivos muy pequeños */
+    }
   }
-}
 
-@keyframes fanimado{
-  0%{
-    background-position: 0% 50%;
+  @keyframes fanimado{
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+  } 
+
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; 
   }
-  50%{
-    background-position: 100% 50%;
-  }
-  100%{
-    background-position: 0% 50%;
-  }
-} 
-
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1; 
-}
-
-nav {
-  position: fixed; /* Fija el nav en la parte superior */
-  top: 0; /* Coloca el nav en la parte superior */
-  left: 0; /* Alinea el nav a la izquierda */
-  width: 100%; /* Ancho completo */
-  background: #333; /* Color de fondo opcional */
-  color: #fff; /* Color del texto opcional */
-  z-index: 1000; /* Asegura que el nav esté por encima de otros elementos */
-  padding: 10px 0; /* Espacio interno opcional */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra  */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.9;
-}
-
-nav ul {
-  list-style: none; /* Elimina los puntos de la lista */
-  margin: 0; 
-  padding: 0; 
-  display: flex; /* elementos en fila */
-
-}
-
-nav ul li {
-  margin: 0 15px; /* Espacio entre los elementos de la lista */
-}
-
-nav ul li a {
-  text-decoration: none; /* Elimina el subrayado */
-  color: #fff; /* Color del texto */
-  font-size: 1.1em; /* Tamaño de fuente opcional */
-}
-
-nav ul li a:hover {
-  color: #f0f0f0d7; /* Color del texto al pasar el mouse */
-}
-
-.nav-footer-iconos {
-  position: absolute;
-  right: 20px; /* Ajusta la posición de las imágenes a la derecha */
-  display: flex;
-  align-items: center;
-}
-
-
-.nav-footer-iconos a {
-  margin-left: 15px;
-}
-
-.nav-footer-iconos img {
-  width: 35px;
-  height: auto;
-  border-radius: 50%;
-}
-
-.nav-footer-iconos img:hover {
-  filter: brightness(0.8); /* Cambia el brillo para crear el efecto de color */
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
 
   nav {
-    justify-content: flex-start; /* Alinea los elementos al principio */
-    padding: 10px; /* Ajusta el padding si es necesario */
-  }
-  
-  nav ul {
-    width: 100%; /* Asegura que la lista ocupe todo el ancho */
-    justify-content: flex-start; /* Alinea los elementos al principio */
-  }
-
-  nav ul li{
-    margin: 0 1px;
-  }
-
-  nav ul li a {
-    font-size: 0.8em; /* Tamaño de fuente más pequeño en pantallas más pequeñas */
-    padding: 4px 8px; /* Ajusta el espacio interno */
-  }
-
-  .nav-footer-iconos img {
-    width: 25px; /* Tamaño más pequeño para pantallas más pequeñas */
-  }
-}
-
-@media (max-width: 480px) {
-  
-  nav ul li a {
-    font-size: 0.9em; /* Tamaño de fuente aún más pequeño */
-    padding: 3px 6px; /* Ajusta el espacio interno */
-  }
-
-  .nav-footer-iconos img {
-    width: 3px; /* Tamaño aún más pequeño para pantallas muy pequeñas */
-  }
-}
-
-section {
-  padding: 2rem;
-}
-
-h2 {
-  border-bottom: 2px solid #333;
-  padding-bottom: 0.5rem;
-}
-
-
-
-
-/* Estilos generales para el contenedor del about */
-#about {
-  padding: 50px;
-}
-
-.about-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.about-image {
-  max-width: 200px;
-  margin-right: 150px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.about-text {
-  max-width: 800px;
-}
-
-.about-text h2 {
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-@media (max-width: 768px) {
-  .about-content {
-    flex-direction: column;
+    position: fixed; /* Fija el nav en la parte superior */
+    top: 0; /* Coloca el nav en la parte superior */
+    left: 0; /* Alinea el nav a la izquierda */
+    width: 100%; /* Ancho completo */
+    background: #333; /* Color de fondo opcional */
+    color: #fff; /* Color del texto opcional */
+    z-index: 1000; /* Asegura que el nav esté por encima de otros elementos */
+    padding: 10px 0; /* Espacio interno opcional */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra  */
+    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    opacity: 0.9;
+    box-sizing: border-box;
+  }
+
+  nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0; 
+    padding: 0; 
+    display: flex; /* elementos en fila */
+
+  }
+
+  nav ul li {
+    margin: 0 15px; /* Espacio entre los elementos de la lista */
+  }
+
+  nav ul li a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #fff; /* Color del texto */
+    font-size: 1.1em; /* Tamaño de fuente opcional */
+  }
+
+  nav ul li a:hover {
+    color: #f0f0f0d7; /* Color del texto al pasar el mouse */
+  }
+
+  .nav-footer-iconos {
+    position: absolute;
+    right: 20px; /* Ajusta la posición de las imágenes a la derecha */
+    display: flex;
+    align-items: center;
+  }
+
+
+  .nav-footer-iconos a {
+    margin-left: 15px;
+  }
+
+  .nav-footer-iconos img {
+    width: 35px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .nav-footer-iconos img:hover {
+    filter: brightness(0.8); /* Cambia el brillo para crear el efecto de color */
+  }
+
+  /* Responsividad */
+  @media (max-width: 768px) {
+
+    nav {
+      justify-content: flex-start; /* Alinea los elementos al principio */
+      padding: 10px; /* Ajusta el padding si es necesario */
+    }
+    
+    nav ul {
+      width: 100%; /* Asegura que la lista ocupe todo el ancho */
+      justify-content: flex-start; /* Alinea los elementos al principio */
+    }
+
+    nav ul li{
+      margin: 0 1px;
+    }
+
+    nav ul li a {
+      font-size: 0.8em; /* Tamaño de fuente más pequeño en pantallas más pequeñas */
+      padding: 4px 8px; /* Ajusta el espacio interno */
+    }
+
+    .nav-footer-iconos img {
+      width: 25px; /* Tamaño más pequeño para pantallas más pequeñas */
+    }
+  }
+
+  @media (max-width: 480px) {
+
+    nav {
+      justify-content: flex-start; /* Alinea los elementos al principio */
+      width: 100%;
+    }
+    
+    nav ul li a {
+      font-size: 0.7em; /* Tamaño de fuente aún más pequeño */
+     
+    }
+
+    .nav-footer-iconos img {
+      width: 20px; /* Tamaño aún más pequeño para pantallas muy pequeñas */
+    }
+  }
+
+  section {
+    padding: 2rem;
+  }
+
+  h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+  }
+
+
+
+
+  /* Estilos generales para el contenedor del about */
+  #about {
+    padding: 50px;
+  }
+
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .about-image {
-    margin-right: 0;
-    margin-bottom: 20px;
-    max-width: 150px;
+    max-width: 200px;
+    margin-right: 150px;
+    border-radius: 50%;
+    flex-shrink: 0;
   }
 
   .about-text {
-    max-width: 100%;
+    max-width: 800px;
+  }
+
+  .about-text h2 {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .about-image {
+      margin-right: 0;
+      margin-bottom: 20px;
+      max-width: 150px;
+    }
+
+    .about-text {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  h3{
+  padding-left: 200px; 
+  }
+
+  /* Estilos para la lista de habilidades */
+  .skills-list {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    background-color: midnightblue ;
+    padding: 0;
+    display: flex; /* flexbox para alinear las imágenes en fila */
+    justify-content: center; /* Centra los elementos en el contenedor */
+    flex-wrap: wrap; /* los elementos se ajusten en múltiples líneas si es necesario */
+  }
+
+  /* Estilos para los ítems de la lista */
+  .skills-list li {
+    margin: 10px; /* Espacio alrededor de cada logo */
+  }
+
+  /* Estilos específicos para las imágenes */
+  .skills-list img {
+    width: 100px; /* Ajusta el tamaño de las imágenes */
+    height: auto; /* Mantén la proporción de las imágenes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el movimiento y sombra */
+  }
+
+  /* Animación de flotar */
+  .skills-list img:hover {
+    transform: translateY(-10px); /* Mueve las imágenes hacia arriba al pasar el ratón por encima */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Añade una sombra para dar efecto de elevación */
+  }
+
+
+
+  /* Responsividad */
+  @media (max-width: 768px) {
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap; /* Ajusta las imágenes en varias filas si es necesario */
+      padding: 0; /* Elimina el padding si es necesario */
+      margin: 0; /* Elimina el margen si es necesario */
+    }
+
+    .skills-list li {
+      margin: 10px; /* Ajusta el espacio entre las imágenes */
+    }
+
+    .skills-list img {
+      width: 50px; /* Ajusta el tamaño de las imágenes si es necesario */
+      height: auto;
+    }
+  }
+
+
+
+  /* Seccion proyectos*/
+
+  #projectos {
+    padding: 50px;
     text-align: center;
   }
-}
 
-h3{
- padding-left: 200px; 
-}
-
-/* Estilos para la lista de habilidades */
-.skills-list {
-  list-style-type: none; /* Elimina los puntos de la lista */
-  background-color: midnightblue ;
-  padding: 0;
-  display: flex; /* flexbox para alinear las imágenes en fila */
-  justify-content: center; /* Centra los elementos en el contenedor */
-  flex-wrap: wrap; /* los elementos se ajusten en múltiples líneas si es necesario */
-}
-
-/* Estilos para los ítems de la lista */
-.skills-list li {
-  margin: 10px; /* Espacio alrededor de cada logo */
-}
-
-/* Estilos específicos para las imágenes */
-.skills-list img {
-  width: 100px; /* Ajusta el tamaño de las imágenes */
-  height: auto; /* Mantén la proporción de las imágenes */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el movimiento y sombra */
-}
-
-/* Animación de flotar */
-.skills-list img:hover {
-  transform: translateY(-10px); /* Mueve las imágenes hacia arriba al pasar el ratón por encima */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Añade una sombra para dar efecto de elevación */
-}
-
-
-
-/* Responsividad */
-@media (max-width: 768px) {
-
-  .skills-list {
+  .projectos-container {
     display: flex;
-    flex-wrap: wrap; /* Ajusta las imágenes en varias filas si es necesario */
-    padding: 0; /* Elimina el padding si es necesario */
-    margin: 0; /* Elimina el margen si es necesario */
+    padding: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px; /* Espacio entre los proyectos */
   }
 
-  .skills-list li {
-    margin: 10px; /* Ajusta el espacio entre las imágenes */
-  }
-
-  .skills-list img {
-    width: 50px; /* Ajusta el tamaño de las imágenes si es necesario */
-    height: auto;
-  }
-}
-
-
-
-/* Seccion proyectos*/
-
-#projectos {
-  padding: 40px;
-  text-align: center;
-}
-
-.projectos-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px; /* Espacio entre los proyectos */
-}
-
-.projecto {
-  flex: 1 1 300px; /* Ajusta el tamaño mínimo según sea necesario */
-  max-width: 300px;
-  text-align: center;
-}
-
-.projecto img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
-  display: block;
-}
-
-.projecto p {
-  margin-top: 10px;
-}
-
-@media (max-width: 768px) {
   .projecto {
-    flex: 1 1 45%; /* Dos columnas en pantallas más pequeñas */
-    max-width: 45%;
+    flex: 1 1 300px; /* Ajusta el tamaño mínimo según sea necesario */
+    max-width: 300px;
+    text-align: center;
   }
-}
 
-@media (max-width: 480px) {
-  .projecto {
-    flex: 1 1 100%; /* Una columna en pantallas muy pequeñas */
+  .projecto img {
     max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
   }
-}
+
+  .projecto p {
+    margin-top: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .projecto {
+      flex: 1 1 45%; /* Dos columnas en pantallas más pequeñas */
+      max-width: 45%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .projecto {
+      flex: 1 1 100%; /* Una columna en pantallas muy pequeñas */
+      max-width: 100%;
+    }
+  }
 
 
-/* Seccion cerfificados*/
-
+  /* Sección de Certificados */
 #certificados {
-  text-align: center;
-  padding: 40px;
+  padding: 2rem;
 }
 
 .certificados-container {
   display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan en la siguiente fila */
-  justify-content: space-around; /* Distribuye el espacio alrededor de los elementos */
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .certificado {
-  flex: 1 1 calc(30% - 20px); /* Ajusta el tamaño de cada imagen */
-  box-sizing: border-box;
-  padding: 10px; /* Espacio interno */
-  max-width: 28%; /* Ajusta el ancho máximo para la imagen */
-  min-width: 200px; /* Establece un ancho mínimo para la imagen */
+  flex: 1 1 200px; /* Crece, se encoge y tiene un tamaño base de 200px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 200px; /* Asegura que las imágenes no sean más anchas que 200px */
 }
 
 .certificado img {
-  width: 90%; 
+  width: 100%;
   height: auto;
-  border-radius: 8px; /* Ajusta el borde si es necesario */
   display: block;
-  margin: 0 auto; /* Centra la imagen dentro del contenedor */
 }
 
-/* Diseño adaptativo */
+/* Responsividad */
 @media (max-width: 768px) {
   .certificado {
-    flex: 1 1 calc(45% - 20px); /* 2 columnas en dispositivos más pequeños */
-  }
-  .certificado img {
-    width: 80%; /* Reduce el tamaño de la imagen en dispositivos más pequeños */
+    flex: 1 1 150px; /* Tamaño base para pantallas medianas */
+    max-width: 150px;
   }
 }
 
 @media (max-width: 480px) {
   .certificado {
-    flex: 1 2 calc(50% - 20px); /* 1 columna en dispositivos muy pequeños */
-  }
-  .certificado img {
-    width: 80%; /* Reduce aún más el tamaño de la imagen en dispositivos muy pequeños */
+    flex: 1 1 120px; /* Tamaño base para pantallas pequeñas */
+    max-width: 120px;
   }
 }
 
 
-/* Estilos para el formulario de contacto */
-/* #contactForm {
-  max-width: 600px;
-  margin: 2rem auto 4rem; 
-  padding: 2rem;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  position: relative;
-}
 
-#contactForm label {
-  display: block;
-  margin-bottom: 0.5rem;
-}
+  /* Estilos para el formulario de contacto */
+  /* #contactForm {
+    max-width: 600px;
+    margin: 2rem auto 4rem; 
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+  }
 
-#contactForm input,
-#contactForm textarea {
-  width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
+  #contactForm label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
 
-#contactForm textarea {
-  resize: vertical;
-}
+  #contactForm input,
+  #contactForm textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
 
-#contactForm button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+  #contactForm textarea {
+    resize: vertical;
+  }
 
-#contactForm button:hover {
-  background-color: #555;
-} */
+  #contactForm button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #contactForm button:hover {
+    background-color: #555;
+  } */
 
 
 
-footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-}
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
 
-.footer-content {
-  height: 150px;
-  text-align: center; /* Centra todo el contenido del footer */
-  padding: 10px; /* Espacio interno del footer */
-}
+  .footer-content {
+    height: 150px;
+    text-align: center; /* Centra todo el contenido del footer */
+    padding: 10px; /* Espacio interno del footer */
+  }
 
-.contact-heading {
-  margin-bottom: 10px; /* Espacio debajo del encabezado */
-  font-size: 1.2em; /* Ajusta el tamaño del texto del encabezado */
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
+  .contact-heading {
+    margin-bottom: 10px; /* Espacio debajo del encabezado */
+    font-size: 1.2em; /* Ajusta el tamaño del texto del encabezado */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
 
-.contact-info {
-  display: flex; /* Utiliza flexbox para alinear la imagen y el texto */
-  align-items: center; /* Alinea verticalmente la imagen y el texto */
-  justify-content: center; /* Centra el contenido horizontalmente */
-  gap: 10px; /* Espacio entre la imagen y el texto */
-}
+  .contact-info {
+    display: flex; /* Utiliza flexbox para alinear la imagen y el texto */
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    gap: 10px; /* Espacio entre la imagen y el texto */
+  }
 
-.mail-icon {
-  width: 24px; /* Ajusta el tamaño de la imagen del sobre */
-  height: auto; /* Mantiene la proporción de la imagen */
-}
+  .mail-icon {
+    width: 24px; /* Ajusta el tamaño de la imagen del sobre */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
 
-.email {
-  font-size: 1.1em; /* Ajusta el tamaño del texto del correo */
-}
+  .email {
+    font-size: 1.1em; /* Ajusta el tamaño del texto del correo */
+  }
 
