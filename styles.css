@@ -17,11 +17,11 @@
   header {
     position: relative;
     display: flex;
-    flex-direction: column; /* Coloca los elementos en una columna */
-    align-items: center; /* Centra los elementos horizontalmente */
-    justify-content: center; /* Centra los elementos verticalmente */
-    height: 100vh; /* Ocupa el 100% del alto de la ventana del navegador */
-    text-align: center; /* Centra el texto horizontalmente */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    text-align: center; 
     background-image: linear-gradient(135deg,#00B7D4,#505488,#2F3F80,#161569,#5A4894,#A950A1,#FF7CAE);
     background-size: 500%;
     animation: fanimado 20s infinite;
@@ -32,50 +32,54 @@
   }
 
   header h1 {
-    font-size: 1.7em; /* Tamaño de fuente del título */
-    color: #fffefec7; /* Color del texto */
-    margin: 0; /* Elimina el margen */
+    font-size: 1.7em; 
+    color: #fffefec7; 
+    margin: 0; 
   }
 
 
 
   header p {
-    font-size: 2.8em; /* Tamaño de fuente del párrafo */
-    color: #000000d0; /* Color del texto */
-    margin-top: 5px; /* Espacio arriba del párrafo */
+    font-size: 2.8em; 
+    color: #000000d0; 
+    margin-top: 5px; 
   }
 
   header p.descripcion {
-    font-size: 1.6em;
-    color: #000000d0;
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 100 "wdth";
+    font-size: 1.4em;
   }
-
-  /* Media queries para dispositivos más pequeños */
+  
+  /* Media queries  */
   @media (max-width: 768px) {
     header h1 {
-      font-size: 1.2em; /* Tamaño de fuente más pequeño en dispositivos más pequeños */
+      font-size: 1.2em; 
     }
 
     header p {
-      font-size: 2em; /* Tamaño de fuente más pequeño en dispositivos más pequeños */
+      font-size: 2em; 
     }
 
     header p.descripcion {
-      font-size: 1.2em; /* Tamaño de fuente más pequeño en dispositivos más pequeños */
+      font-size: 1.2em; 
     }
   }
 
   @media (max-width: 480px) {
     header h1 {
-      font-size: 1em; /* Tamaño de fuente más pequeño en dispositivos muy pequeños */
+      font-size: 1em; 
     }
 
     header p {
-      font-size: 1.5em; /* Tamaño de fuente más pequeño en dispositivos muy pequeños */
+      font-size: 1.5em;
     }
 
     header p.descripcion {
-      font-size: 1em; /* Tamaño de fuente más pequeño en dispositivos muy pequeños */
+      font-size: 1em; 
     }
   }
 
@@ -100,110 +104,112 @@
     z-index: -1; 
   }
 
-  nav {
-    position: fixed; /* Fija el nav en la parte superior */
-    top: 0; /* Coloca el nav en la parte superior */
-    left: 0; /* Alinea el nav a la izquierda */
-    width: 100%; /* Ancho completo */
-    background: #333; /* Color de fondo opcional */
-    color: #fff; /* Color del texto opcional */
-    z-index: 1000; /* Asegura que el nav esté por encima de otros elementos */
-    padding: 10px 0; /* Espacio interno opcional */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra  */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.9;
-    box-sizing: border-box;
-  }
+      nav {
+        position: fixed; /* Fija el nav en la parte superior */
+        top: 0; /* Coloca el nav en la parte superior */
+        left: 0; /* Alinea el nav a la izquierda */
+        width: 100%; /* Ancho completo */
+        background: #333; /* Color de fondo opcional */
+        color: #fff; /* Color del texto opcional */
+        z-index: 1000; /* Asegura que el nav esté por encima de otros elementos */
+        padding: 10px 0; /* Espacio interno opcional */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra  */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.9;
+        box-sizing: border-box;
+      }
 
-  nav ul {
-    list-style: none; /* Elimina los puntos de la lista */
-    margin: 0; 
-    padding: 0; 
-    display: flex; /* elementos en fila */
+      nav ul {
+        list-style: none; /* Elimina los puntos de la lista */
+        margin: 0; 
+        padding: 0; 
+        display: flex; /* elementos en fila */
 
-  }
+      }
 
-  nav ul li {
-    margin: 0 15px; /* Espacio entre los elementos de la lista */
-  }
+      nav ul li {
+        margin: 0 15px; /* Espacio entre los elementos de la lista */
+      }
 
-  nav ul li a {
-    text-decoration: none; /* Elimina el subrayado */
-    color: #fff; /* Color del texto */
-    font-size: 1.1em; /* Tamaño de fuente opcional */
-  }
+      nav ul li a {
+        text-decoration: none; /* Elimina el subrayado */
+        color: #fff; /* Color del texto */
+        font-size: 1.1em; /* Tamaño de fuente opcional */
+      }
 
-  nav ul li a:hover {
-    color: #f0f0f0d7; /* Color del texto al pasar el mouse */
-  }
+      nav ul li a:hover {
+        color: #f0f0f0d7; /* Color del texto al pasar el mouse */
+      }
 
-  .nav-footer-iconos {
-    position: absolute;
-    right: 20px; /* Ajusta la posición de las imágenes a la derecha */
-    display: flex;
-    align-items: center;
-  }
+      .nav-footer-iconos {
+        position: absolute;
+        right: 20px; /* Ajusta la posición de las imágenes a la derecha */
+        display: flex;
+        align-items: center;
+      }
 
 
-  .nav-footer-iconos a {
-    margin-left: 15px;
-  }
+      .nav-footer-iconos a {
+        margin-left: 15px;
+      }
 
-  .nav-footer-iconos img {
-    width: 35px;
-    height: auto;
-    border-radius: 50%;
-  }
+      .nav-footer-iconos img {
+        width: 35px;
+        height: auto;
+        border-radius: 50%;
+      }
 
-  .nav-footer-iconos img:hover {
-    filter: brightness(0.8); /* Cambia el brillo para crear el efecto de color */
-  }
+      .nav-footer-iconos img:hover {
+        filter: brightness(0.8); /* Cambia el brillo para crear el efecto de color */
+      }
 
-  /* Responsividad */
-  @media (max-width: 768px) {
+      /* Responsividad */
+      @media (max-width: 768px) {
 
-    nav {
-      justify-content: flex-start; /* Alinea los elementos al principio */
-      padding: 10px; /* Ajusta el padding si es necesario */
-    }
-    
-    nav ul {
-      width: 100%; /* Asegura que la lista ocupe todo el ancho */
-      justify-content: flex-start; /* Alinea los elementos al principio */
-    }
+        nav {
+          justify-content: flex-start; /* Alinea los elementos al principio */
+          padding: 10px; /* Ajusta el padding si es necesario */
+        }
+        
+        nav ul {
+          width: 100%; /* Asegura que la lista ocupe todo el ancho */
+          justify-content: flex-start; /* Alinea los elementos al principio */
+        }
 
-    nav ul li{
-      margin: 0 1px;
-    }
+        nav ul li{
+          margin: 0 1px;
+        }
 
-    nav ul li a {
-      font-size: 0.8em; /* Tamaño de fuente más pequeño en pantallas más pequeñas */
-      padding: 4px 8px; /* Ajusta el espacio interno */
-    }
+        nav ul li a {
+          font-size: 0.8em; /* Tamaño de fuente más pequeño en pantallas más pequeñas */
+          padding: 4px 8px; /* Ajusta el espacio interno */
+        }
 
-    .nav-footer-iconos img {
-      width: 25px; /* Tamaño más pequeño para pantallas más pequeñas */
-    }
-  }
+        .nav-footer-iconos img {
+          width: 25px; /* Tamaño más pequeño para pantallas más pequeñas */
+          margin-top: 10px; /* Desplaza las imágenes hacia abajo */
+        }
+      }
 
-  @media (max-width: 480px) {
+      @media (max-width: 480px) {
 
-    nav {
-      justify-content: flex-start; /* Alinea los elementos al principio */
-      width: 100%;
-    }
-    
-    nav ul li a {
-      font-size: 0.7em; /* Tamaño de fuente aún más pequeño */
-     
-    }
+        nav {
+          justify-content: flex-start; /* Alinea los elementos al principio */
+          width: 100%;
+        } 
+        
+        nav ul li a {
+          font-size: 0.7em; /* Tamaño de fuente aún más pequeño */
+        
+        }
 
-    .nav-footer-iconos img {
-      width: 20px; /* Tamaño aún más pequeño para pantallas muy pequeñas */
-    }
-  }
+        .nav-footer-iconos img {
+          width: 24px; /* Tamaño aún más pequeño para pantallas muy pequeñas */
+          margin-top: 10px; /* Desplaza las imágenes hacia abajo */
+        }
+      }
 
   section {
     padding: 2rem;
@@ -271,7 +277,7 @@
   /* Estilos para la lista de habilidades */
   .skills-list {
     list-style-type: none; /* Elimina los puntos de la lista */
-    background-color: midnightblue ;
+    background-image: linear-gradient(135deg,#505488,#2F3F80,#161569,#5A4894,#A950A1);
     padding: 0;
     display: flex; /* flexbox para alinear las imágenes en fila */
     justify-content: center; /* Centra los elementos en el contenedor */
@@ -294,15 +300,20 @@
   .skills-list img:hover {
     transform: translateY(-10px); /* Mueve las imágenes hacia arriba al pasar el ratón por encima */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Añade una sombra para dar efecto de elevación */
+    color: #ffffff;
   }
 
 
 
   /* Responsividad */
   @media (max-width: 768px) {
+    
+    .habilidades-titulo {
+      padding-left: 20px; /* Ajusta el padding-left para pantallas medianas */
+    }
 
     .skills-list {
-      display: flex;
+      display: flex;  
       flex-wrap: wrap; /* Ajusta las imágenes en varias filas si es necesario */
       padding: 0; /* Elimina el padding si es necesario */
       margin: 0; /* Elimina el margen si es necesario */
@@ -318,7 +329,25 @@
     }
   }
 
-
+  @media (max-width: 480px) {
+    .habilidades-titulo {
+      padding-left: 10px; /* Ajusta el padding-left para pantallas pequeñas */
+      text-align: left; /* Alinea el texto a la izquierda */
+    }
+  
+    .skills-list {
+      flex-wrap: wrap; /* Ajusta las imágenes en varias filas si es necesario */
+    }
+  
+    .skills-list li {
+      margin: 10px; /* Ajusta el espacio entre las imágenes */
+    }
+  
+    .skills-list img {
+      width: 60px; /* Ajusta el tamaño de las imágenes */
+      height: auto;
+    }
+  }
 
   /* Seccion proyectos*/
 
@@ -339,6 +368,7 @@
     flex: 1 1 300px; /* Ajusta el tamaño mínimo según sea necesario */
     max-width: 300px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para el efecto hover */
   }
 
   .projecto img {
@@ -352,10 +382,16 @@
     margin-top: 10px;
   }
 
+  /* Efecto hover */
+.projecto:hover {
+  transform: translateY(-10px); /* Mueve el proyecto ligeramente hacia arriba */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Añade una sombra para dar efecto de elevación */  
+  } 
+
   @media (max-width: 768px) {
     .projecto {
-      flex: 1 1 45%; /* Dos columnas en pantallas más pequeñas */
-      max-width: 45%;
+      flex: 1 1 70%; /* Dos columnas en pantallas más pequeñas */
+      max-width: 70%;
     }
   }
 
@@ -377,14 +413,15 @@
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
+  padding-top: 30px;
 }
 
 .certificado {
-  flex: 1 1 200px; /* Crece, se encoge y tiene un tamaño base de 200px */
+  flex: 1 1 250px; /* Crece, se encoge y tiene un tamaño base de 200px */
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 200px; /* Asegura que las imágenes no sean más anchas que 200px */
+  max-width: 250px; /* Asegura que las imágenes no sean más anchas que 200px */
 }
 
 .certificado img {
@@ -396,15 +433,15 @@
 /* Responsividad */
 @media (max-width: 768px) {
   .certificado {
-    flex: 1 1 150px; /* Tamaño base para pantallas medianas */
-    max-width: 150px;
+    flex: 1 1 200px; /* Tamaño base para pantallas medianas */
+    max-width: 200px;
   }
 }
 
 @media (max-width: 480px) {
   .certificado {
-    flex: 1 1 120px; /* Tamaño base para pantallas pequeñas */
-    max-width: 120px;
+    flex: 1 1 170px; /* Tamaño base para pantallas pequeñas */
+    max-width: 170px;
   }
 }
 
@@ -457,37 +494,141 @@
 
 
   footer {
-    background: #333;
+    background-image: linear-gradient(135deg,#505488,#2F3F80,#161569,#5A4894,#A950A1);
     color: #fff;
-    text-align: center;
     padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px; /* Ajusta según sea necesario */
+     width: 400px; /* Ajusta según sea necesario */
+    margin: 10px; /* Añade espacio entre columnas */
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: inherit; /* Hereda el color del texto */
+}
+
+.footer-item i, .footer-item .side-icon {
+    font-size: 40px; /* Ajusta el tamaño del icono */
+    color: #fff;
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+
+.side-text {
+  font-size: 1.4em; /* Ajusta el tamaño de la fuente según sea necesario */
+}
+
+.side-subtext {
+  font-size: 1em; /* También puedes ajustar el tamaño de esta si es necesario */
+}
+
+.footer-content {
+    text-align: center;
+    width: 400px;
+    flex: 1;
+}
+
+.contact-heading {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mail-icon {
+    width: 24px;
+    height: auto;
+    background: none;
+}
+
+.email {
+    font-size: 1.1em;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .footer-item, .footer-content {
+      flex: 1 1 100%; /* Permite que las columnas ocupen el 100% del ancho disponible */
+      min-width: 0; /* Permite que las columnas se reduzcan en pantallas pequeñas */
   }
 
-  .footer-content {
-    height: 150px;
-    text-align: center; /* Centra todo el contenido del footer */
-    padding: 10px; /* Espacio interno del footer */
+  .footer-container {
+      flex-direction: row; /* Mantiene las columnas en una fila */
+      flex-wrap: nowrap; /* Evita que las columnas se apilen verticalmente */
+  }
+
+  .footer-item i, .footer-item img.side-icon {
+      font-size: 27px; /* Reduce el tamaño del icono para pantallas pequeñas */
+      width: 30px; /* Reduce el tamaño de la imagen */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-item, .footer-content {
+      flex: 1 1 100%; /* Permite que las columnas ocupen el 100% del ancho disponible */
+      min-width: 0; /* Permite que las columnas se reduzcan en pantallas muy pequeñas */
+      margin: 5px; /* Ajusta el margen para pantallas más pequeñas */
+  }
+
+  .footer-container {
+      flex-direction: row; /* Mantiene las columnas en una fila */
+      flex-wrap: nowrap; /* Evita que las columnas se apilen verticalmente */
+  }
+  
+  .icon-text {
+      flex-direction: column; /* Ajusta la dirección del texto y el ícono para que se adapten mejor en pantallas muy pequeñas */
+      align-items: center;
+  }
+
+  .side-text-container {
+      margin-left: 0; /* Elimina el margen a la izquierda para centrar el texto debajo del ícono */
+  }
+
+  .side-text {
+      font-size: 1.1em; /* Ajusta el tamaño de la fuente según sea necesario */
+  }
+
+  .footer-item i, .footer-item img.side-icon {
+      font-size: 30px; /* Reduce el tamaño del icono para pantallas pequeñas */
+      width: 30px; /* Reduce el tamaño de la imagen */
+  }
+
+  .side-subtext {
+      font-size: 0.9em; /* Reduce el tamaño de la fuente para pantallas pequeñas */
   }
 
   .contact-heading {
-    margin-bottom: 10px; /* Espacio debajo del encabezado */
-    font-size: 1.2em; /* Ajusta el tamaño del texto del encabezado */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-  }
-
-  .contact-info {
-    display: flex; /* Utiliza flexbox para alinear la imagen y el texto */
-    align-items: center; /* Alinea verticalmente la imagen y el texto */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    gap: 10px; /* Espacio entre la imagen y el texto */
-  }
-
-  .mail-icon {
-    width: 24px; /* Ajusta el tamaño de la imagen del sobre */
-    height: auto; /* Mantiene la proporción de la imagen */
+      font-size: 1em; /* Reduce el tamaño de la fuente del encabezado para pantallas pequeñas */
   }
 
   .email {
-    font-size: 1.1em; /* Ajusta el tamaño del texto del correo */
+      font-size: 0.7em; /* Reduce el tamaño de la fuente del correo para pantallas pequeñas */
   }
+
+  .mail-icon {
+      width: 20px; /* Reduce el tamaño del icono de correo para pantallas pequeñas */
+  }
+}
 
