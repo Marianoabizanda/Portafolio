@@ -105,15 +105,15 @@
   }
 
       nav {
-        position: fixed; /* Fija el nav en la parte superior */
-        top: 0; /* Coloca el nav en la parte superior */
-        left: 0; /* Alinea el nav a la izquierda */
-        width: 100%; /* Ancho completo */
-        background: #333; /* Color de fondo opcional */
-        color: #fff; /* Color del texto opcional */
-        z-index: 1000; /* Asegura que el nav esté por encima de otros elementos */
-        padding: 10px 0; /* Espacio interno opcional */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra  */
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        background: #333; 
+        color: #fff; 
+        z-index: 1000; 
+        padding: 10px 0; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
         display: flex;
         justify-content: center;
         align-items: center;
@@ -125,27 +125,27 @@
         list-style: none; /* Elimina los puntos de la lista */
         margin: 0; 
         padding: 0; 
-        display: flex; /* elementos en fila */
+        display: flex; 
 
       }
 
       nav ul li {
-        margin: 0 15px; /* Espacio entre los elementos de la lista */
+        margin: 0 15px; 
       }
 
       nav ul li a {
-        text-decoration: none; /* Elimina el subrayado */
-        color: #fff; /* Color del texto */
-        font-size: 1.1em; /* Tamaño de fuente opcional */
+        text-decoration: none; 
+        color: #fff; 
+        font-size: 1.1em; 
       }
 
       nav ul li a:hover {
-        color: #f0f0f0d7; /* Color del texto al pasar el mouse */
+        color: #f0f0f0d7; 
       }
 
       .nav-footer-iconos {
         position: absolute;
-        right: 20px; /* Ajusta la posición de las imágenes a la derecha */
+        right: 20px; 
         display: flex;
         align-items: center;
       }
@@ -162,20 +162,20 @@
       }
 
       .nav-footer-iconos img:hover {
-        filter: brightness(0.8); /* Cambia el brillo para crear el efecto de color */
+        filter: brightness(0.8); 
       }
 
       /* Responsividad */
       @media (max-width: 768px) {
 
         nav {
-          justify-content: flex-start; /* Alinea los elementos al principio */
-          padding: 10px; /* Ajusta el padding si es necesario */
+          justify-content: flex-start; 
+          padding: 10px; 
         }
         
         nav ul {
-          width: 100%; /* Asegura que la lista ocupe todo el ancho */
-          justify-content: flex-start; /* Alinea los elementos al principio */
+          width: 100%; 
+          justify-content: flex-start; 
         }
 
         nav ul li{
@@ -183,25 +183,25 @@
         }
 
         nav ul li a {
-          font-size: 0.8em; /* Tamaño de fuente más pequeño en pantallas más pequeñas */
-          padding: 4px 8px; /* Ajusta el espacio interno */
+          font-size: 0.8em; 
+          padding: 4px 8px; 
         }
 
         .nav-footer-iconos img {
-          width: 25px; /* Tamaño más pequeño para pantallas más pequeñas */
-          margin-top: 10px; /* Desplaza las imágenes hacia abajo */
+          width: 25px; 
+          margin-top: 10px; 
         }
       }
 
       @media (max-width: 480px) {
 
         nav {
-          justify-content: flex-start; /* Alinea los elementos al principio */
+          justify-content: flex-start; 
           width: 100%;
         } 
         
         nav ul li a {
-          font-size: 0.7em; /* Tamaño de fuente aún más pequeño */
+          font-size: 0.7em; 
         
         }
 
@@ -279,21 +279,21 @@
     list-style-type: none; /* Elimina los puntos de la lista */
     background-image: linear-gradient(135deg,#505488,#2F3F80,#161569,#5A4894,#A950A1);
     padding: 0;
-    display: flex; /* flexbox para alinear las imágenes en fila */
-    justify-content: center; /* Centra los elementos en el contenedor */
-    flex-wrap: wrap; /* los elementos se ajusten en múltiples líneas si es necesario */
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
   }
 
   /* Estilos para los ítems de la lista */
   .skills-list li {
-    margin: 10px; /* Espacio alrededor de cada logo */
+    margin: 10px; 
   }
 
   /* Estilos específicos para las imágenes */
   .skills-list img {
-    width: 100px; /* Ajusta el tamaño de las imágenes */
-    height: auto; /* Mantén la proporción de las imágenes */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el movimiento y sombra */
+    width: 100px;
+    height: auto; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
   }
 
   /* Animación de flotar */
@@ -309,42 +309,42 @@
   @media (max-width: 768px) {
     
     .habilidades-titulo {
-      padding-left: 20px; /* Ajusta el padding-left para pantallas medianas */
+      padding-left: 20px; 
     }
 
     .skills-list {
       display: flex;  
-      flex-wrap: wrap; /* Ajusta las imágenes en varias filas si es necesario */
-      padding: 0; /* Elimina el padding si es necesario */
-      margin: 0; /* Elimina el margen si es necesario */
+      flex-wrap: wrap; 
+      padding: 0; 
+      margin: 0;
     }
 
     .skills-list li {
-      margin: 10px; /* Ajusta el espacio entre las imágenes */
+      margin: 10px; 
     }
 
     .skills-list img {
-      width: 50px; /* Ajusta el tamaño de las imágenes si es necesario */
+      width: 50px; 
       height: auto;
     }
   }
 
   @media (max-width: 480px) {
     .habilidades-titulo {
-      padding-left: 10px; /* Ajusta el padding-left para pantallas pequeñas */
-      text-align: left; /* Alinea el texto a la izquierda */
+      padding-left: 10px; 
+      text-align: left; 
     }
   
     .skills-list {
-      flex-wrap: wrap; /* Ajusta las imágenes en varias filas si es necesario */
+      flex-wrap: wrap; 
     }
   
     .skills-list li {
-      margin: 10px; /* Ajusta el espacio entre las imágenes */
+      margin: 10px; 
     }
   
     .skills-list img {
-      width: 60px; /* Ajusta el tamaño de las imágenes */
+      width: 60px; 
       height: auto;
     }
   }
@@ -361,14 +361,14 @@
     padding: 50px;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px; /* Espacio entre los proyectos */
+    gap: 50px; 
   }
 
   .projecto {
-    flex: 1 1 300px; /* Ajusta el tamaño mínimo según sea necesario */
+    flex: 1 1 300px; 
     max-width: 300px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para el efecto hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .projecto img {
@@ -384,20 +384,20 @@
 
   /* Efecto hover */
 .projecto:hover {
-  transform: translateY(-10px); /* Mueve el proyecto ligeramente hacia arriba */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Añade una sombra para dar efecto de elevación */  
+  transform: translateY(-10px); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);   
   } 
 
   @media (max-width: 768px) {
     .projecto {
-      flex: 1 1 70%; /* Dos columnas en pantallas más pequeñas */
+      flex: 1 1 70%; 
       max-width: 70%;
     }
   }
 
   @media (max-width: 480px) {
     .projecto {
-      flex: 1 1 100%; /* Una columna en pantallas muy pequeñas */
+      flex: 1 1 100%; 
       max-width: 100%;
     }
   }
@@ -417,11 +417,33 @@
 }
 
 .certificado {
-  flex: 1 1 250px; /* Crece, se encoge y tiene un tamaño base de 200px */
+  flex: 1 1 250px;
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 250px; /* Asegura que las imágenes no sean más anchas que 200px */
+  max-width: 250px; }
+  
+/* Responsividad */
+@media (max-width: 768px) {
+  .certificado {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .certificado {
+    flex: 1 1 calc(50% - 1rem); 
+    max-width: calc(50% - 1rem);
+  }
+}
+
+
+.certificado {
+  flex: 1 1 250px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .certificado img {
@@ -429,23 +451,6 @@
   height: auto;
   display: block;
 }
-
-/* Responsividad */
-@media (max-width: 768px) {
-  .certificado {
-    flex: 1 1 200px; /* Tamaño base para pantallas medianas */
-    max-width: 200px;
-  }
-}
-
-@media (max-width: 480px) {
-  .certificado {
-    flex: 1 1 170px; /* Tamaño base para pantallas pequeñas */
-    max-width: 170px;
-  }
-}
-
-
 
   /* Estilos para el formulario de contacto */
   /* #contactForm {
@@ -512,30 +517,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px; /* Ajusta según sea necesario */
-     width: 400px; /* Ajusta según sea necesario */
-    margin: 10px; /* Añade espacio entre columnas */
+    width: 400px; 
+     width: 400px; 
+    margin: 10px; 
 }
 
 .icon-text {
     display: flex;
     align-items: center;
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: inherit; /* Hereda el color del texto */
+    text-decoration: none; 
+    color: inherit; 
 }
 
 .footer-item i, .footer-item .side-icon {
-    font-size: 40px; /* Ajusta el tamaño del icono */
+    font-size: 40px; 
     color: #fff;
-    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    margin-right: 10px; 
 }
 
 .side-text {
-  font-size: 1.4em; /* Ajusta el tamaño de la fuente según sea necesario */
+  font-size: 1.4em; 
 }
 
 .side-subtext {
-  font-size: 1em; /* También puedes ajustar el tamaño de esta si es necesario */
+  font-size: 1em; 
 }
 
 .footer-content {
@@ -565,70 +570,71 @@
 
 .email {
     font-size: 1.1em;
+    margin: 0 auto;
 }
 
 /* Responsividad */
 @media (max-width: 768px) {
   .footer-item, .footer-content {
-      flex: 1 1 100%; /* Permite que las columnas ocupen el 100% del ancho disponible */
-      min-width: 0; /* Permite que las columnas se reduzcan en pantallas pequeñas */
+      flex: 1 1 100%; 
+      min-width: 0; 
   }
 
   .footer-container {
-      flex-direction: row; /* Mantiene las columnas en una fila */
-      flex-wrap: nowrap; /* Evita que las columnas se apilen verticalmente */
+      flex-direction: row; 
+      flex-wrap: nowrap; 
   }
 
   .footer-item i, .footer-item img.side-icon {
-      font-size: 27px; /* Reduce el tamaño del icono para pantallas pequeñas */
-      width: 30px; /* Reduce el tamaño de la imagen */
+      font-size: 27px; 
+      width: 30px; 
   }
 }
 
 @media (max-width: 480px) {
   .footer-item, .footer-content {
-      flex: 1 1 100%; /* Permite que las columnas ocupen el 100% del ancho disponible */
-      min-width: 0; /* Permite que las columnas se reduzcan en pantallas muy pequeñas */
-      margin: 5px; /* Ajusta el margen para pantallas más pequeñas */
+      flex: 1 1 100%; 
+      min-width: 0; 
+      margin: 5px; 
   }
 
   .footer-container {
-      flex-direction: row; /* Mantiene las columnas en una fila */
-      flex-wrap: nowrap; /* Evita que las columnas se apilen verticalmente */
+      flex-direction: row; 
+      flex-wrap: nowrap; 
   }
   
   .icon-text {
-      flex-direction: column; /* Ajusta la dirección del texto y el ícono para que se adapten mejor en pantallas muy pequeñas */
+      flex-direction: column; 
       align-items: center;
   }
 
   .side-text-container {
-      margin-left: 0; /* Elimina el margen a la izquierda para centrar el texto debajo del ícono */
+      margin-left: 0; 
   }
 
   .side-text {
-      font-size: 1.1em; /* Ajusta el tamaño de la fuente según sea necesario */
+      font-size: 1.1em; 
   }
 
   .footer-item i, .footer-item img.side-icon {
-      font-size: 30px; /* Reduce el tamaño del icono para pantallas pequeñas */
-      width: 30px; /* Reduce el tamaño de la imagen */
+      font-size: 30px; 
+      width: 30px; 
   }
 
   .side-subtext {
-      font-size: 0.9em; /* Reduce el tamaño de la fuente para pantallas pequeñas */
+      font-size: 0.9em; 
   }
 
   .contact-heading {
-      font-size: 1em; /* Reduce el tamaño de la fuente del encabezado para pantallas pequeñas */
+      font-size: 1em; 
   }
 
   .email {
-      font-size: 0.7em; /* Reduce el tamaño de la fuente del correo para pantallas pequeñas */
+      font-size: 0.7em;   
   }
 
   .mail-icon {
-      width: 20px; /* Reduce el tamaño del icono de correo para pantallas pequeñas */
+      width: 20px; 
   }
 }
 
