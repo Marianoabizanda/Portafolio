@@ -541,7 +541,7 @@ footer {
 .icon-text {
   display: flex;
   align-items: center;
-  text-decoration: none; /* Elimina el subrayado del enlace */
+  text-decoration: none;
   color: inherit; /* Mantiene el color del texto heredado del contenedor */
 }
 
@@ -619,8 +619,8 @@ footer {
   }
 
   .icon-text {
-      flex-direction: row; /* Cambia la dirección de la fila */
-      align-items: center; /* Alinea verticalmente al centro */
+      flex-direction: row;
+      align-items: center; 
   }
 
   .side-text {
