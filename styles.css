@@ -111,6 +111,8 @@ nav ul li a{
   text-decoration: none;
   color: #fff;
   font-size: 1.05em;
+  white-space: nowrap; 
+  display: inline-block;
 }
 
 nav ul li a:hover{
@@ -144,13 +146,14 @@ nav ul li a:hover{
   nav ul{
     width: 100%;
     justify-content: flex-start;
-    gap: 6px;
+    gap: 4px;
     padding-right: 90px;
   }
 
   nav ul li a{
     font-size: .8em;
     padding: 4px 6px;
+    white-space: nowrap;
   }
 
   .nav-footer-iconos img{
@@ -221,19 +224,22 @@ nav ul li a:hover{
    SKILLS
 ========================= */
 .habilidades-titulo{
-  text-align: center;               
-  margin: 20px 0;
-  font-size: clamp(1.2rem, 3.2vw, 1.7rem);
+  text-align: left;
+  margin: 20px auto;
+  padding-left: clamp(12px, 6vw, 120px);
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
+  max-width: 1200px;
 }
 
 .skills-list{
   list-style: none;
   background-image: linear-gradient(135deg,#505488,#2F3F80,#161569,#5A4894,#A950A1);
-  padding: 18px 12px;
+  padding: clamp(10px, 2.5vw, 18px) clamp(8px, 3vw, 16px);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;                        
+  align-items: center;
+  gap: clamp(10px, 3vw, 40px);                       
 }
 
 .skills-list li{
@@ -243,6 +249,7 @@ nav ul li a:hover{
 .skills-list img{
   width: clamp(40px, 6vw, 70px);    
   height: auto;
+  display: block  ;
   transition: transform .25s ease, box-shadow .25s ease;
 }
 
@@ -264,12 +271,12 @@ nav ul li a:hover{
 
 @media (max-width: 480px) {
   .skills-list {
-    padding: 10px 20px;   
-    gap: 16px;   
+    padding: 8px 6px;   
+    gap: 10px;   
     align-content: center;       
   }
   .skills-list img {
-    width: 36px;   /* 🔽 más chico */
+    width: 34px;   
   }
 }
 
